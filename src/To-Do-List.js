@@ -28,6 +28,19 @@ class ToDoList extends Component
                         To-Do List
                   </Header>
                 </div>
+                <div className="row">
+                  <Form onSubmit={this.onSubmit}>
+                    <Input
+                     type="text"
+                     name="task"
+                     value={this.state.task}
+                     onChange={this.onChange}
+                     fluid
+                     placeholder="Create Task"
+                     >
+                    </Input>
+                  </Form>
+                </div>
            </div>
       );
    }
